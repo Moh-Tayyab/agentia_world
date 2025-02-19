@@ -89,43 +89,46 @@ const HeroSection = () => {
             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
           </motion.div>
 
-          {/* Animated Title */}
-          <motion.h1
-            className="text-3xl lg:text-8xl font-bold text-center mb-4 mt-4"
-            animate={{
-              backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
-            }}
-            transition={{
-              repeat: Infinity,
-              duration: 10,
-              ease: "linear",
-            }}
-            style={{
-              backgroundImage: 'linear-gradient(45deg, #8B5CF6, #EC4899, #3B82F6)',
-              backgroundClip: 'text',
-              WebkitBackgroundClip: 'text',
-              color: 'transparent',
-              backgroundSize: '300% 300%',
-            }}
-          >
-            <span className="block mb-4"> ENTERPRISE AI AGENT</span>
-            <span className="inline-block">For The Future</span>
-            <motion.span
-              className="inline-block"
-              animate={{ y: [-5, 5, -5] }}
-              transition={{
-                duration: 4,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-            >
-              Agents Platform
-            </motion.span>
-          </motion.h1>
+          <div className="flex flex-col items-center justify-center">
+  {/* Animated Title */}
+  <motion.h1
+    className="text-3xl lg:text-6xl font-bold text-center my-4"
+    animate={{
+      backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
+    }}
+    transition={{
+      repeat: Infinity,
+      duration: 10,
+      ease: 'linear',
+    }}
+    style={{
+      backgroundImage: 'linear-gradient(45deg, #8B5CF6, #EC4899, #3B82F6)',
+      backgroundClip: 'text',
+      WebkitBackgroundClip: 'text',
+      color: 'transparent',
+      backgroundSize: '300% 300%',
+    }}
+  >
+    <span className="block mb-4">ENTERPRISE AI AGENT</span>
+    <span className="block">For The Future</span>
+    <motion.span
+      className="block"
+      animate={{ y: [-5, 5, -5] }}
+      transition={{
+        duration: 4,
+        repeat: Infinity,
+        ease: 'easeInOut',
+      }}
+    >
+      Agents Platform
+    </motion.span>
+  </motion.h1>
+</div>
+
 
           {/* Animated AI Message */}
           <motion.div
-            className="relative mt-2 p-6 bg-white/5 backdrop-blur-xl rounded-xl border border-white/10 shadow-2xl"
+            className="relative p-6 bg-white/5 backdrop-blur-xl rounded-xl border border-white/10 shadow-2xl"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}

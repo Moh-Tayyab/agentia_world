@@ -84,10 +84,14 @@ export default function QuestionsSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
+          <h2  data-aos="fade-down"
+        className="text-3xl md:text-5xl lg:text-6xl pb-4 font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent animate-pulse"
+          >
             Intelligent Insights
           </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p  className="text-gray-400 text-xl mb-12"
+        data-aos="fade-up"
+        data-aos-delay="200">
             Answers to common questions about our{" "}
             <span className="text-purple-400 font-medium">Agentic AI</span> platform
           </p>

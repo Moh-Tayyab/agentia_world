@@ -32,8 +32,8 @@ const plans = [
       "Custom API Access",
       "Enhanced Security Protocols",
     ],
-    buttonColor: "bg-gradient-to-r from-blue-500 to-indigo-500 hover:shadow-lg",
-    borderColor: "border-blue-600",
+    buttonColor: "bg-gradient-to-r from-purple-500 to-pink-500 hover:shadow-lg",
+    borderColor: "border-purple-600",
   },
   {
     name: "Enterprise",
@@ -49,8 +49,8 @@ const plans = [
       "Enterprise-Grade Security",
       "Custom AI Model Training",
     ],
-    buttonColor: "bg-gradient-to-r from-green-500 to-teal-500 hover:shadow-lg",
-    borderColor: "border-green-600",
+    buttonColor: "bg-gradient-to-r from-purple-500 to-pink-500 hover:shadow-lg",
+    borderColor: "border-purple-600",
   },
 ];
 
@@ -63,8 +63,8 @@ export default function PricingSection() {
     <>
         <section id="pricing" className="relative w-full py-20 px-6 bg-black text-white text-center">
       <h2
-        className="text-4xl md:text-5xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500 mb-6"
-        data-aos="fade-up"
+        data-aos="fade-down"
+        className="text-3xl md:text-5xl lg:text-6xl pb-4 font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent animate-pulse"
       >
         Flexible Pricing for Every Need
       </h2>
